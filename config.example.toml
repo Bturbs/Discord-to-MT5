@@ -1,0 +1,17 @@
+# 0.5 means 0.5% of current equity per signal. Example only: choose your risk.
+risk_percent = 0.5
+dry_run = true
+allow_real_account = false
+max_signal_age_seconds = 60
+max_tick_age_seconds = 15
+max_positions = 1
+magic = 1547302
+
+# REPLACE both the channel ID and symbol. One explicit symbol per channel.
+[channels."REPLACE_WITH_DISCORD_CHANNEL_ID"]
+symbol = "REPLACE_WITH_EXACT_BROKER_SYMBOL"
+max_entry_drift_points = 20
+max_spread_points = 30
+deviation_points = 10
+# Account-currency commission allowance for opening AND closing one lot.
+commission_per_lot = 0.0

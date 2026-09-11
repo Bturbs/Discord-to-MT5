@@ -1,0 +1,12 @@
+.env
+.env.local
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+*.db*
+vendor/mt5/*
+!vendor/mt5/README.md
+infra/*.parameters.json
+dist/
+build/

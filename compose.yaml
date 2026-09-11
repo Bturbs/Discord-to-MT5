@@ -1,0 +1,13 @@
+services:
+  signal-capture:
+    platform: linux/amd64
+    build: .
+    env_file: .env
+    restart: unless-stopped
+    stop_grace_period: 90s
+    volumes:
+      - ledger:/state
+    ports:
+      - "127.0.0.1:8080:8080"
+volumes:
+  ledger:

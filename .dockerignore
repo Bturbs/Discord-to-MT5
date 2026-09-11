@@ -1,0 +1,15 @@
+.git
+.env
+.venv
+**/__pycache__
+.pytest_cache
+*.egg-info
+tests
+*.db*
+infra/*.parameters.json
+vendor/mt5/config/accounts.dat
+vendor/mt5/config/common.ini
+vendor/mt5/bases
+vendor/mt5/logs
+vendor/mt5/MQL5/Logs
+vendor/mt5/Profiles
