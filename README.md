@@ -69,6 +69,11 @@ another channel. Config is loaded at startup; changing the baked-in config requi
 an image rebuild and a new revision. Do not configure two accounts against the same
 local SQLite ledger. Azure automatically partitions records by MT5 server and login.
 
+The supplied `config.toml` maps channel `1547302122763067482` to IC Markets `USTEC`.
+Dry-run remains enabled. This selects the execution instrument; it does not convert
+MNQ futures entry/stop/target levels into USTEC prices. Validate those levels against
+the broker quote before enabling execution.
+
 **“Points” means the broker's MT5 `symbol_info.point`, not an MNQ index point.**
 For example, if `point=0.01`, 20 points means a 0.20 price difference. Tune the
 spread, drift and deviation values for the broker. Futures symbols may require

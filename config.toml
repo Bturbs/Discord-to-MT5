@@ -9,8 +9,8 @@ magic = 1547302
 
 # Signal author is restricted in code to bot 1547302271942000751.
 [channels."1547302122763067482"]
-# MNQ is the requested instrument; confirm the exact broker Market Watch symbol.
-symbol = "MNQ"
+# IC Markets symbol supplied by the user. Validate signal price levels in dry-run.
+symbol = "USTEC"
 max_entry_drift_points = 20
 max_spread_points = 30
 deviation_points = 10
